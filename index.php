@@ -13,8 +13,7 @@
     <label >password:</label> <br>
     <input type="password" name="password"> <br>
     <input type="submit" value="login">
-
-</form>
+    </form>
 
     
 </body>
@@ -22,5 +21,7 @@
 
 <?php 
 
+echo $_GET["username"] . "<br>";
+echo $_GET["password"];
 
 ?>
