@@ -21,6 +21,7 @@
     $radius = $_POST["radius"];
     $circumference = null;
     $area = null;
+    $volume = null;
 
     $circumference = 2* pi() * $radius;
     $circumference = round(($circumference), 2);
@@ -28,6 +29,10 @@
 
     $area = pi() * ($radius ** 2);
     $area = round($area, 2);
-    echo "Circumference:  {$circumference} cm <br>";
-    echo "Area:  {$area} cm<sup>2</sup> <br>";
+
+    $volume = (4/3) * pi() * $radius ** 3;
+    $volume = round($volume, 2);
+    echo "Circumference = {$circumference} cm <br>";
+    echo "Area = {$area} cm<sup>2</sup> <br>";
+    echo "Volume = {$volume} cm<sup>3</sup> <br>";
 ?>
