@@ -7,12 +7,9 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <label>Food item name: </label>
-        <input type="text" name="fooditem">
-        <br>
-        <label>Quantity: </label>
-        <input type="text" name="quantity">
-        <input type="submit" value="Place Order">
+        <label> Radius:</label>
+        <input type="text" name="radius">
+        <input type="submit" value="calculate">
 
     </form>
 
@@ -21,15 +18,16 @@
 </html>
 
 <?php 
+    $radius = $_POST["radius"];
+    $circumference = null;
+    $area = null;
 
-$fooditem = $_POST["fooditem"];
-$quantity = $_POST["quantity"];
-$price = 10;
-$total = null;
+    $circumference = 2* pi() * $radius;
+    $circumference = round(($circumference), 2);
 
-$total = $quantity * $price;
 
-echo "You have ordered {$quantity} {$fooditem}s <br>";
-echo "Your total is: {$total} <br>";
-echo "<h1>ENJOY!!</h1>"
+    $area = pi() * ($radius ** 2);
+    $area = round($area, 2);
+    echo "Circumference:  {$circumference} cm <br>";
+    echo "Area:  {$area} cm<sup>2</sup> <br>";
 ?>
