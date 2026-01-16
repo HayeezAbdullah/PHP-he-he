@@ -6,13 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="get">
-    <label >username:</label> <br>
-    <input type="text" name="username"> <br>
+    <form action="index.php" method="post">
+        <label>Food item name: </label>
+        <input type="text" name="fooditem">
+        <br>
+        <label>Quantity: </label>
+        <input type="text" name="quantity">
+        <input type="submit" value="Place Order">
 
-    <label >password:</label> <br>
-    <input type="password" name="password"> <br>
-    <input type="submit" value="login">
     </form>
 
     
@@ -21,7 +22,14 @@
 
 <?php 
 
-echo $_GET["username"] . "<br>";
-echo $_GET["password"];
+$fooditem = $_POST["fooditem"];
+$quantity = $_POST["quantity"];
+$price = 10;
+$total = null;
 
+$total = $quantity * $price;
+
+echo "You have ordered {$quantity} {$fooditem}s <br>";
+echo "Your total is: {$total} <br>";
+echo "<h1>ENJOY!!</h1>"
 ?>
