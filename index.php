@@ -1,22 +1,11 @@
 <?php 
 
-//associative array
-$capitals = array("USA"=>"Washington DC",
-                 "Japan"=>"Kyoto",
-                 "South Korea"=>"Seoul",
-                 "India"=>"New Delhi");
+$username = "hbjhb";
 
-$capitals["USA"] = "Las Vegas";
-$capitals["China"] = "Beijing";
-// array_pop($capitals);
-// array_shift($capitals);
-$keys = array_keys($capitals);
-
-foreach($keys as $key){
-    echo "{$key} <br> ";
+if (isset($username)) {
+    echo "this var is set ";
+} else {
+    echo "this var is not set";
 }
-
-
-
  
 ?>
