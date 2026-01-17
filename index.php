@@ -7,28 +7,29 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <input type="radio" name="credit_card" value="Visa">
-        Visa <br>
+        <input type="checkbox" name="pizza" value="Pizza">
+        Pizza <br>
 
-        <input type="radio" name="credit_card" value="Mastercard">
-        Mastercard <br>
+         <input type="checkbox" name="hamburger" value="Hamburger">
+        Hamburger <br>
 
-        <input type="radio" name="credit_card" value="American Express">
-        American Express <br>
+         <input type="checkbox" name="hotdog" value="Hotdog">
+        Hotdog <br>
 
-        <input type="submit" name="submit" value="submit">
+        <input type="submit" name="submit"  value="submit">
     </form>
 </body>
 </html>
 
 
 <?php 
-        if (isset($_POST["submit"])) {
-            $credit_card = $_POST["credit_card"];
-            echo $credit_card;
-        }
 
-    
-   
+if(isset($_POST["submit"])){
+
+
+    if (isset($_POST["pizza"])) {
+        echo "u selected pizza";
+    }
+}
 
 ?>
