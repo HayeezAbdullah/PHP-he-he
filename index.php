@@ -1,10 +1,15 @@
 <?php 
 
-// while loop
-$counter = 0;
-while($counter <=10){
-echo "the counter amount is {$counter} <br>";
-$counter ++;
+//arrays
+
+$foods = array("Pizza", "Burger", "Hotdog");
+$counter = count($foods);
+$a = 0;
+
+while ($a < $counter) {
+    # code...
+    echo "food: {$foods[$a]} <br>";
+    $a++;
 }
 
  
