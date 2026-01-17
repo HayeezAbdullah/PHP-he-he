@@ -12,3 +12,7 @@ echo "you made \${$weekly_pay} this week";
 
  
 ?>
+<?php
+echo "<h2>Welcome to PHP!</h2>";
+echo "Today is " . date("Y-m-d");
+?>
