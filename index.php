@@ -1,14 +1,11 @@
 <?php 
 
-$hours = 30;
-$rate = 15;
-$weekly_pay = null;
-
-if ($hours <= 40){
-    $weekly_pay = $hours * $rate;
+// while loop
+$counter = 0;
+while($counter <=10){
+echo "the counter amount is {$counter} <br>";
+$counter ++;
 }
-
-echo "you made \${$weekly_pay} this week";
 
  
 ?>
