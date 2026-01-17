@@ -7,38 +7,28 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <label>Username:</label>
-        <input type="text" name="username">
-        <br>
-        <br>
-        <label>Password:</label>
-        <input type="password" name="password">
-<br><br>
-        <input type="submit" value="Log In" name="login">
-        <br>
+        <input type="radio" name="credit_card" value="Visa">
+        Visa <br>
 
+        <input type="radio" name="credit_card" value="Mastercard">
+        Mastercard <br>
+
+        <input type="radio" name="credit_card" value="American Express">
+        American Express <br>
+
+        <input type="submit" name="submit" value="submit">
     </form>
 </body>
 </html>
 
+
 <?php 
-
-        // foreach($_POST as $key => $value){
-        //     echo "{$key} = {$value} <br>";
-        // }
-
-        if(isset($_POST["login"])){
-            $username = $_POST["username"];
-            $password = $_POST["password"];
-
-            if (empty($username)) {
-                echo "user name is missing";
-            } elseif (empty($password)) {
-             echo "password is missing";
-            } 
-            else {
-                echo "hello, {$username}";
-            }
+        if (isset($_POST["submit"])) {
+            $credit_card = $_POST["credit_card"];
+            echo $credit_card;
         }
- 
+
+    
+   
+
 ?>
