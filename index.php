@@ -1,15 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
 <?php 
 
-function happy_birthday($name){
-    echo "happy birthday  to {$name}!";
+function hypotenuse($a, $b){
+    $c = sqrt($a ** 2 + $b ** 2);
+    return $c;
 }
 
-happy_birthday("bro");
-echo "<br>";
-happy_birthday("hyz_abd");
-echo "<br>";
-happy_birthday("batman");
-echo "<br>";
-
+echo hypotenuse(3, 4);
 
 ?>
