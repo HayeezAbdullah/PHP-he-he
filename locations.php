@@ -10,7 +10,7 @@ include("header.html");
     <title>Document</title>
 </head>
 <body>
-    Locations
+    Locations...
 </body>
 </html>
 

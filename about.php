@@ -10,7 +10,7 @@ include("header.html");
     <title>Document</title>
 </head>
 <body>
-    This is about page
+    This is about page...
 </body>
 </html>
 

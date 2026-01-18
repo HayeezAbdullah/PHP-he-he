@@ -12,7 +12,7 @@ include("header.html");
 </head>
 <body>
     This is my homepage <br>
-    stuff about your home page can go here
+    stuff about your home page can go here...
 </body>
 </html>
 
