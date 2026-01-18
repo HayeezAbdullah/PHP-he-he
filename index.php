@@ -1,21 +1,11 @@
-<?php 
-
-include("header.html");
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    This is my homepage <br>
-    stuff about your home page can go here...
-</body>
-</html>
-
 <?php
-include("footer.html");
+
+setcookie("fav_food", "pizza", time()+ (86400 * 2), "/");
+
+setcookie("fav_drink", "coffee", time()+ (86400 * 3), "/");
+
+setcookie("fav_dessert", "ice cream", time()+ (86400 * 4), "/");
+
+
+
 ?>
