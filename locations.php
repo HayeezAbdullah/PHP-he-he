@@ -1,8 +1,7 @@
-<?php 
-
+<?php
 include("header.html");
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +10,7 @@ include("header.html");
     <title>Document</title>
 </head>
 <body>
-    This is my homepage <br>
-    stuff about your home page can go here
+    Locations
 </body>
 </html>
 
