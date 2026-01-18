@@ -18,8 +18,9 @@
 
 if (isset($_POST["login"])) {
     
-    $username = $_POST["username"];
-    echo "Hello {$username}!";
+    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+
+    echo "Hello {$username}";
 }
 
 ?>
