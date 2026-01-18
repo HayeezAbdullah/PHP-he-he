@@ -5,6 +5,11 @@ function happy_birthday($name){
 }
 
 happy_birthday("bro");
+echo "<br>";
+happy_birthday("hyz_abd");
+echo "<br>";
+happy_birthday("batman");
+echo "<br>";
 
 
 ?>
