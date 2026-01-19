@@ -1,5 +1,5 @@
 <?php
-session_start();
+include("database.php");
 ?>
 
 <!DOCTYPE html>
@@ -7,43 +7,9 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="post">
-        username: <br>
-        <input type="text" name="username">
-        <br>
-        password: <br>
-        <input type="password" name="password"> <br>
-        <input type="submit" name="login" value="login">
-    </form>
+    Hello <br>
 </body>
 </html>
-
-<?php
-
-    if (isset($_POST["login"])) {
-        
-
-        if (!empty($_POST["username"]) && !empty($_POST["password"])) {
-           
-        $_SESSION["username"] = $_POST["username"];
-            
-        $_SESSION["password"] = $_POST["password"];
-
-        header("Location: home.php");
-        exit();
-
-        echo $_SESSION["username"] . "<br>";
-        echo $_SESSION["password"] . "<br>";
-
-        }
-
-        else{
-        echo "Missing username or password <br>";
-    }
-
-    }
-    
-?>
